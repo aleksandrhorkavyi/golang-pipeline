@@ -1,4 +1,4 @@
-FROM golang:1.15.14-buster AS builder
+FROM golang:1.16.4-buster AS builder
 
 ARG VERSION=dev
 
