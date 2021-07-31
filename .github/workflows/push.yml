@@ -55,6 +55,7 @@ jobs:
         id: docker_build
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
+          name: aleksandrhorkavyi/golang-pipeline
           tags: |
             ${{env.VERSION_TAG}}
             ${{env.LASTEST_TAG}}
