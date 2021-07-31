@@ -58,8 +58,5 @@ jobs:
           name: aleksandrhorkavyi/golang-pipeline
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-          tags: |
-            ${{env.VERSION_TAG}}
-            ${{env.LASTEST_TAG}}
-          buildargs: |
-            ${{steps.version_step.outputs.version}}
+          tags: ${{env.VERSION_TAG}}
+          buildargs: ${{steps.version_step.outputs.version}}
